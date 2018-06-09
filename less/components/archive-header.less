@@ -1,0 +1,106 @@
+.archive-header,
+.page-header {
+    margin: 0;
+    padding-top: (@spacer * 3);
+    padding-bottom: (@spacer * 3 - 11);
+    border-bottom: 1px solid @gray-lighter;
+
+    background-color: @gray-lighter;
+
+    .archive-title {
+        font-size: @font-size-h4;
+        margin-top: 0;
+        font-family: @font-family-base;
+        font-weight: normal;
+    }
+
+    .breadcrumb-trail {
+        margin-bottom: (@line-height-computed / 2);
+    }
+
+    @media (min-width: @grid-float-breakpoint) {
+        .row {
+            display:table;
+            width: 100%;
+            margin: 0;
+
+            > div {
+                display: table-cell;
+                vertical-align: middle;
+                float: none;
+                padding: 0;
+            }
+        }
+        .breadcrumb-trail {
+            text-align: right;
+        }
+    }
+}
+
+.post-header {
+    padding: @spacer;
+    border-bottom: 1px solid @gray-lighter;
+    background-color: @gray-lighter;
+}
+
+.page-template-custom-page.layout-default .page-header {
+    margin-bottom: @spacer * 4;
+}
+
+.breadcrumb-trail {
+    font-size: @font-size-small;
+
+    // a {
+    //     color: lighten(@text-color, 15%);
+    //
+    //     &:hover,
+    //     &:focus {
+    //         color: @link-hover-color;
+    //         text-decoration: @link-hover-decoration;
+    //     }
+    //
+    //     &:focus {
+    //       .tab-focus();
+    //     }
+    // }
+
+    .trail-items {
+        margin: 0;
+        padding-left: 0;
+
+        .trail-item {
+          display: inline-block;
+          padding-right: @spacer;
+
+          &::before {
+              font-family: FontAwesome;
+              content: "\f105";
+              padding-right: @spacer;
+              color: lighten(@text-color, 25%);
+          }
+        }
+
+        .trail-begin {
+            .text-hide();
+            font: 0/0 a;
+
+            &::before {
+                content: "";
+                padding-right: 0;
+            }
+
+            > a::before {
+                font-family: "Genericons-Neue";
+                content:"\f409";
+                line-height: 1;
+                font-size: @font-size-small;
+            }
+        }
+
+        .trail-end {
+            font-weight: 700;
+            color: @brand-primary;
+            padding-right: 0;
+        }
+    }
+}

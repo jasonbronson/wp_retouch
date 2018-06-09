@@ -1,0 +1,97 @@
+.block {
+    padding-bottom: @spacer * 4 - @line-height-computed;
+
+    > .h1,
+    > .h2,
+    > .h3,
+    > .h4,
+    > .h5,
+    > .h6,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.doc-block {
+    > .h1,
+    > .h2,
+    > .h3,
+    > .h4,
+    > .h5,
+    > .h6,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+        &:not(:first-child) {
+            margin-top: @spacer-y * 4 - @line-height-computed;
+        }
+    }
+}
+
+.block-advanced {
+    .container {
+        position: relative;
+    }
+
+    .block__inner {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .block_header {
+        margin-bottom: @spacer * 4;
+        text-align: center;
+    }
+
+    .block_title {
+        margin-top: 0;
+        font-size: @font-size-h2;
+    }
+}
+
+.block-classic {
+    .block_title {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: @font-size-h5;
+    }
+}
+// isotope block
+
+// .isotope {
+//     padding-bottom: @line-height-computed;
+// }
+
+.isotope__inner {
+    .make-row();
+    margin-bottom: @spacer-y * 4 - @line-height-computed * 2;
+
+    .no-gutter & {
+        margin-bottom: @spacer-y * 4 - @line-height-computed;
+        margin-left: 0;
+        margin-right: 0;
+
+        .entry {
+            margin-bottom: 0;
+        }
+    }
+}
+// posts
+
+.posts {
+
+}
+
+.mb-c {
+
+}

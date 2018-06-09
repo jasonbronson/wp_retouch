@@ -1,0 +1,23 @@
+// style the to top button
+.to-top {
+    width: @spacer * 3;
+    height: @spacer * 3;
+    border-radius: @border-radius-small;
+    text-align: center;
+    z-index: 999;
+    color: #fff;
+    font-size: 0;
+    background-color: rgba(0,0,0,.5);
+
+    &::before {
+        font-family: FontAwesome;
+        content: "\f106";
+        font-size: @font-size-base;
+        line-height: @spacer * 3;
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: @brand-secondary;
+    }
+}

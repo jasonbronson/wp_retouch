@@ -1,0 +1,32 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.form-control,
+input {
+	.box-shadow(none);
+
+	&:focus {
+		.box-shadow(none);
+	}
+}
+
+.close {
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.4;
+
+	&:focus,
+	&:hover {
+		color: #fff;
+		opacity: 1;
+	}
+}
+
+.alert {
+	.alert-link {
+		color: #fff;
+		text-decoration: underline;
+	}
+}

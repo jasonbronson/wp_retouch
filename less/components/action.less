@@ -1,0 +1,37 @@
+.has-action-buttons {
+    position: relative;
+    display: block;
+
+    .action-buttons {
+        position: absolute;
+        display: none;
+        z-index: 3;
+    }
+
+    .action-buttons_top-right {
+        top: 0;
+        right: 0;
+        margin-top: @padding-base-vertical;
+        margin-right: @padding-base-vertical / 2;
+    }
+
+    .action-buttons_center-center {
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    &:hover {
+        .action-buttons {
+            display: block;
+        }
+    }
+}
+
+.action-buttons{
+    .btn {
+        .animation-duration(.5s);
+        .animation-fill-mode(both);
+    }
+}

@@ -1,0 +1,46 @@
+// icon box
+.icon-box {
+    margin-bottom: @line-height-computed;
+
+    .icon-box__icon {
+        margin-bottom: @line-height-computed;
+        font-size: @font-size-base * 2.5;
+        color: @brand-secondary;
+    }
+
+    .icon-box__title {
+        margin-bottom: @line-height-computed;
+    }
+}
+
+// icon on the left
+.icon-box_icon-left {
+    position: relative;
+    .icon-box__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .icon-box__detail {
+        padding-left: @spacer * 4;
+
+        .icon-box__title {
+            margin-top: 0;
+        }
+    }
+}
+
+// has border
+.icon-box_bordered {
+    padding: @spacer * 2;
+    border: 1px solid @gray-lighter;
+    text-align: center;
+}
+
+// has shadow
+.icon-box_shadowed {
+    padding: @spacer * 2;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07),0 1px 5px 0 rgba(0,0,0,0.06),0 3px 1px -2px rgba(0,0,0,0.1);
+}

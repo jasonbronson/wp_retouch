@@ -1,0 +1,33 @@
+.main {
+    padding-top: @spacer * 4;
+
+    #content {
+        padding-bottom: @line-height-computed;
+    }
+
+    .page-template-builder.layout-wide & {
+        padding-top: 0;
+
+        #content {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.layout-boxed {
+    #page {
+        .container-fixed();
+        padding-left: 0;
+        padding-right: 0;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        @media (min-width: @screen-sm-min) {
+            width: @container-sm + 50;
+        }
+        @media (min-width: @screen-md-min) {
+            width: @container-md + 50;
+        }
+        @media (min-width: @screen-lg-min) {
+            width: @container-lg + 50;
+        }
+    }
+}

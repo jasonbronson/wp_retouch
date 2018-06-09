@@ -1,0 +1,21 @@
+.dropdown-menu {
+    border: 0;
+    border-radius: 0;
+
+    > li {
+        > a {
+            padding: @padding-large-vertical @padding-large-horizontal;
+            border-bottom: 1px solid rgba(255,255,255, .05);
+            font-size: @font-size-small;
+        }
+        &:last-child > a {
+            border-bottom: 0;
+        }
+    }
+    @media (min-width: @grid-float-breakpoint) {
+    }
+}
+
+.navbar .dropdown-menu {
+    min-width: 230px;
+}

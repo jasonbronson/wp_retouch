@@ -1,0 +1,30 @@
+.wb-call_classic {
+    position: relative;
+    border: 1px solid @gray-lighter;
+    padding: @spacer * 2;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+    margin-bottom: @line-height-computed;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+    }
+
+    @media (min-width: @grid-float-breakpoint) {
+        padding-right: @spacer * 10;
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            right: @spacer * 2;
+            margin-top: -22px;
+        }
+    }
+}
+
+.wb-call_default {
+    text-align: center;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+    }
+}

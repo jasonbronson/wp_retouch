@@ -1,0 +1,45 @@
+@loader-width: 45px;
+@loader-border-width: 5px;
+
+.loader-utter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: @zindex-modal;
+    text-align: center;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    margin-top: -@loader-width / 2;
+    margin-left: -@loader-width / 2;
+    display: inline-block;
+    border: @loader-border-width solid @gray-lighter;
+    border-radius: 50%;
+    border-top-color: @brand-success;
+    width: @loader-width;
+    height: @loader-width;
+    .animation(spin 2s linear infinite);
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

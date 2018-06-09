@@ -1,0 +1,20 @@
+.wp-caption {
+	position: relative;
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		.center-block();
+	}
+
+	.wp-caption-text {
+		position: absolute;
+		bottom: @line-height-computed;
+		padding: @padding-base-vertical @padding-base-horizontal;
+		background-color: rgba(0,0,0,.75);
+		color: #e3e3e3;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}

@@ -1,0 +1,117 @@
+// navigation
+.navigation {
+    margin-bottom: 4 * @spacer-y - @line-height-computed;
+
+    &.comments-pagination,
+    &.posts-filter,
+    &.posts-pagination {
+    }
+
+    &.post-navigation {}
+
+    &.pagination {
+        margin-top: 0;
+    }
+}
+// nav links
+.nav-links {
+    .clearfix();
+
+    > .page-numbers,
+    > .nav-link {
+        display: inline-block;
+        position: relative;
+        padding: @padding-base-vertical @padding-base-horizontal;
+        line-height: @line-height-base;
+        color: @pagination-color;
+        background-color: @pagination-bg;
+        // border: 1px solid @pagination-border;
+        border-radius: @border-radius-small;
+
+        &:focus,
+        &:hover {
+            color: @pagination-hover-color;
+            background-color: @pagination-hover-bg;
+            // border-color: @pagination-hover-border;
+        }
+    }
+
+    > .current {
+        &,
+        &:focus,
+        &:hover {
+            z-index: 2;
+            background-color: @pagination-active-bg;
+            // border-color: @pagination-active-border;
+            color: @pagination-active-color;
+            cursor: default;
+        }
+    }
+}
+// post navigation
+
+.post-navigation {
+    .clearfix();
+
+    .nav-next,
+    .nav-previous {
+        width: 50%;
+        position: relative;
+
+        &::after,
+        &::before {
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            font-family: FontAwesome;
+            line-height: 1;
+            color: @gray-lighter;
+            font-size: ceil(@font-size-base * 1.5);
+        }
+
+        &:hover {
+            &::after,
+            &::before {
+                color: @gray-light;
+            }
+        }
+    }
+
+    .nav-previous {
+        float: left;
+
+        &::before {
+            left: 0;
+            margin-left: -@spacer-x ;
+            content: "\f104";
+        }
+    }
+
+    .nav-next {
+        float: right;
+        text-align: right;
+
+        &::after {
+            right: 0;
+            margin-right: -@spacer-x;
+            content: "\f105";
+        }
+    }
+
+    .nav-subtitle {
+        display: block;
+        text-transform: uppercase;
+        font-size: ceil((@font-size-base * .7));
+        font-weight: 700;
+        color: lighten(@text-color, 15%);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .nav-title {
+        font-size: ceil((@font-size-base * 1.1));
+        font-weight: 700;
+    }
+}

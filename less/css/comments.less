@@ -1,0 +1,213 @@
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+/**
+ * Comments Template
+ * --------------------------------------------------------------------------- */
+#comments-template {
+    .clearfix();
+}
+/* ====== COMMENTS ======= */
+#comments {}
+
+#comments-number {
+    margin: 0 0 @spacer-y * 4 - @line-height-computed;
+}
+/* === Comments closed message === */
+.comments-closed {
+    margin-bottom: @spacer-y * 4 - @line-height-computed;
+    text-align: center;
+}
+
+.comments-closed.pings-open {}
+/* === Comment list === */
+ol.comment-list {
+    margin-bottom: @spacer-y * 4 - @line-height-computed * 2;
+    padding-left: 0;
+    list-style: none;
+    .clearfix();
+}
+
+ol.comment-list ol.children {
+    list-style: none;
+    border-left: 1px solid @gray-lighter;
+}
+/* === Individual comments */
+li.comment .comment-content,
+li.ping {}
+
+li.comment {}
+
+li.ping {
+    padding: (@spacer * 2);
+    margin-bottom: @line-height-computed;
+    padding-bottom: (@spacer * 2 - @line-height-computed);
+    border: 1px solid @gray-lighter;
+}
+
+.comment-body {
+    position: relative;
+    padding: (@spacer * 2);
+    padding-bottom: (@spacer * 2 - @line-height-computed);
+    padding-left: (@spacer * 8);
+    border: 1px solid @gray-lighter;
+    margin-bottom: @line-height-computed;
+}
+
+li.bypostauthor {}
+/* === Avatars === */
+.comment-list .avatar {
+    position: absolute;
+    top: (@spacer * 2);
+    left: (@spacer * 2);
+}
+/* === Meta === */
+.comment-header {
+    margin-bottom: @line-height-computed;
+    .clearfix();
+
+    .comment-byline {
+        &,
+        a {
+            color: lighten(@text-color, 15%);
+        }
+
+        a:focus,
+        a:hover {
+            color: @brand-primary;
+        }
+    }
+}
+
+.comment-author {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.comment-author cite {}
+
+.comment-header .published {}
+/* === Comment text/content === */
+.comment-content {
+    margin-bottom: @line-height-computed;
+}
+/* === Reply link === */
+.reply {
+    margin-bottom: @line-height-computed;
+}
+
+.comment-reply-link,
+.comment-reply-login {
+    font-size: ceil((@font-size-base * .7));
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 2px solid @gray-lighter;
+
+    &:hover {}
+}
+/* ====== RESPOND (COMMENT FORM) ====== */
+#respond {
+    margin-bottom: @spacer * 4 - @line-height-computed * 2;
+    .clearfix();
+
+    .comment & {
+        margin: 0;
+    }
+}
+
+#reply-title {
+    margin: 0 0 @line-height-computed;
+}
+
+#reply-title small {
+    float: right;
+    .text-hide();
+
+    a::before {
+        font-family: "Genericons-Neue";
+        font-size: @font-size-base;
+        content: '\f406';
+        line-height: @line-height-base;
+    }
+}
+
+#respond .log-in-out {}
+
+#respond label {}
+
+#respond label .required {}
+
+#respond input[type="text"] {}
+
+#respond input[type="text"]:focus {}
+
+#respond input[type="url"] {}
+
+#respond input[type="url"]:focus {}
+
+#respond input[type="email"] {}
+
+#respond input[type="email"]:focus {}
+
+#respond input[type="submit"] {}
+
+#respond input[type="submit"]:focus {}
+
+#respond input[type="submit"]:hover {}
+
+#respond textarea {}
+
+#respond textarea:focus {}
+/*
+Comment Form
+ */
+#commentform {
+    .make-row();
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    margin-bottom: @line-height-computed;
+    .make-md-column(4);
+}
+
+.comment-form-comment,
+.comment-notes,
+.form-allowed-tags,
+.form-submit,
+.logged-in-as {
+    margin-bottom: @line-height-computed;
+    .make-md-column(12);
+}
+
+.must-log-in {
+    margin-bottom: @line-height-computed;
+}
+
+.comment-edit-link,
+.comment-permalink,
+.comment-published {
+    margin-right: @spacer / 2;
+
+    &::before {
+        margin-right: ceil(@spacer / 3);
+        font-family: "Genericons-Neue";
+    }
+}
+
+.comment-permalink::before {
+    content: '\f107';
+}
+
+.comment-published::before {
+    content: '\f303';
+}
+
+.comment-edit-link::before {
+    content: '\f411';
+}

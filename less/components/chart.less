@@ -1,0 +1,33 @@
+.chart-item {
+    margin-bottom: @line-height-computed;
+
+    .chart {
+        position: relative;
+        width: 125px;
+        height: 125px;
+        line-height: 120px;
+        display: inline-block;
+        text-align: center;
+
+        .percent {
+            font-size: @font-size-large;
+
+            &::after {
+                content: '%';
+                margin-left: 0.1em;
+                font-size: 0.8em;
+            }
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .chart-label {
+        font-size: @font-size-h4;
+        font-weight: normal;
+    }
+}

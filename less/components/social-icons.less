@@ -1,0 +1,141 @@
+//
+// Social Icons
+// --------------------------------------------------
+.icons {
+    a {
+        .btn();
+        padding: 0;
+        width: ceil(@spacer * 2.5);
+        height: ceil(@spacer * 2.5);
+        line-height: ceil(@spacer * 2.5);
+        border-radius: 50%;
+        &::before {
+            font-family: FontAwesome;
+            content: "\f0c1";
+        }
+
+        .btn-outline-default();
+    }
+    // Facebook Icon
+    a[href*="facebook.com"] {
+        &::before {
+            content: "\f09a";
+        }
+
+        &:hover {
+            color: #fff;
+            border-color: #3b5999;
+            background-color: #3b5999;
+        }
+    }
+    // Twitter Icon
+    a[href*="twitter.com"] {
+        &::before {
+            content: "\f099";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #55acee;
+            background-color: #55acee;
+        }
+    }
+    // LinkedIn Icon
+    a[href*="linkedin.com"] {
+        &::before {
+            content: "\f0e1";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #0077B5;
+            background-color: #0077B5;
+        }
+    }
+    // Tumblr Icon
+    a[href*="tumblr.com"] {
+        &::before {
+            content: "\f173";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #34465d;
+            background-color: #34465d;
+        }
+    }
+    // Yahoo Icon
+    a[href*="yahoo.com"] {
+        &::before {
+            content: "\f19e";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #410093;
+            background-color: #410093;
+        }
+    }
+    // Instagram Icon
+    a[href*="instagram.com"] {
+        &::before {
+            content: "\f16d";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #3f729b;
+            background-color: #3f729b;
+        }
+    }
+    // Skype Icon
+    a[href*="skype.com"] {
+        &::before {
+            content: "\f17e";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #00AFF0;
+            background-color: #00AFF0;
+        }
+    }
+    // WordPress Icon
+    a[href*="wordpress.com"] {
+        &::before {
+            content: "\f19a";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #21759b;
+            background-color: #21759b;
+        }
+    }
+    // Vimeo Icon
+    a[href*="vimeo.com"] {
+        &::before {
+            content: "\f27d";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #1ab7ea;
+            background-color: #1ab7ea;
+        }
+    }
+    // VKontakte Icon
+    a[href*="vk.com"] {
+        &::before {
+            content: "\f189";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #4c75a3;
+            background-color: #4c75a3;
+        }
+    }
+    // SlideShare Icon
+    a[href*="slideshare.net"] {
+        &::before {
+            content: "\f1e7";
+        }
+        &:hover {
+            color: #fff;
+            border-color: #0077b5;
+            background-color: #0077b5;
+        }
+    }
+}

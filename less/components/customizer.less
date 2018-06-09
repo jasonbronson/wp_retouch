@@ -1,0 +1,266 @@
+.wb_customizer {
+    width: 275px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    height: 100%;
+    margin-left: -275px;
+    .transition(all .2s ease);
+    *box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+
+    .panel {
+        position: relative;
+        height: 100%;
+
+        .btn__style-toggle {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            margin-right: -50px;
+            line-height: 50px;
+            border-left: 0;
+            padding: 0;
+            border-radius: 0;
+        }
+    }
+
+    .wb_customizer__block {
+        margin-bottom: @line-height-computed;
+        .clearfix();
+    }
+
+    .wb_customizer__link {
+        width: 49%;
+        float: left;
+        margin-bottom: 1px;
+        margin-right: 1px;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .wb_customizer__head {
+        text-transform: uppercase;
+        font-size: @font-size-small - 2;
+    }
+
+
+    .icon {
+        box-shadow: 0 0 2px rgba(0,0,0,0.1);
+    }
+
+    .panel-heading,
+    .panel-body,
+    .panel-footer {
+    }
+
+    .panel-heading {
+
+    }
+
+    .panel-body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+        .box-shadow(none);
+
+    }
+
+    .panel-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid @gray-light;
+        border-radius: 50%;
+        font-size: @font-size-small;
+        background-color: @gray-dark;
+        color: #fff;
+    }
+}
+
+.is-visible {
+    display: block;
+    margin-left: 0;
+
+    .icon {
+        .rotate(180deg);
+    }
+}
+
+.wb_customizer__control {
+    position: fixed;
+    bottom: 12px;
+    left: @panel-body-padding;
+}
+
+.option {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 35px;
+    .hide-text();
+    cursor: pointer;
+    border: 3px solid @gray-lighter;
+
+}
+.option.zeroclipboard-is-hover.turquoise,
+.option:hover.turquoise {
+    background-color: #1dd2af
+}
+.option.zeroclipboard-is-hover.green-sea,
+.option:hover.green-sea {
+    background-color: #19b698
+}
+.option.zeroclipboard-is-hover.emerland,
+.option:hover.emerland {
+    background-color: #40d47e
+}
+.option.zeroclipboard-is-hover.nephritis,
+.option:hover.nephritis {
+    background-color: #2cc36b
+}
+.option.zeroclipboard-is-hover.peter-river,
+.option:hover.peter-river {
+    background-color: #4aa3df
+}
+.option.zeroclipboard-is-hover.belize-hole,
+.option:hover.belize-hole {
+    background-color: #2e8ece
+}
+.option.zeroclipboard-is-hover.amethyst,
+.option:hover.amethyst {
+    background-color: #a66bbe
+}
+.option.zeroclipboard-is-hover.wisteria,
+.option:hover.wisteria {
+    background-color: #9b50ba
+}
+.option.zeroclipboard-is-hover.wet-asphalt,
+.option:hover.wet-asphalt {
+    background-color: #3d566e
+}
+.option.zeroclipboard-is-hover.midnight-blue,
+.option:hover.midnight-blue {
+    background-color: #354b60
+}
+.option.zeroclipboard-is-hover.sun-flower,
+.option:hover.sun-flower {
+    background-color: #f2ca27
+}
+.option.zeroclipboard-is-hover.orange,
+.option:hover.orange {
+    background-color: #f4a62a
+}
+.option.zeroclipboard-is-hover.carrot,
+.option:hover.carrot {
+    background-color: #e98b39
+}
+.option.zeroclipboard-is-hover.pumpkin,
+.option:hover.pumpkin {
+    background-color: #ec5e00
+}
+.option.zeroclipboard-is-hover.alizarin,
+.option:hover.alizarin {
+    background-color: #ea6153
+}
+.option.zeroclipboard-is-hover.pomegranate,
+.option:hover.pomegranate {
+    background-color: #d14233
+}
+.option.zeroclipboard-is-hover.clouds,
+.option:hover.clouds {
+    background-color: #fbfcfc;
+    color: #bdc3c7
+}
+.option.zeroclipboard-is-hover.silver,
+.option:hover.silver {
+    background-color: #cbd0d3
+}
+.option.zeroclipboard-is-hover.concrete,
+.option:hover.concrete {
+    background-color: #a3b1b2
+}
+.option.zeroclipboard-is-hover.asbestos,
+.option:hover.asbestos {
+    background-color: #8c9899
+}
+.option.zeroclipboard-is-hover header,
+.option:hover header {
+    display: block
+}
+.option.turquoise {
+    background-color: #1ABC9C
+}
+.option.green-sea {
+    background-color: #16A085
+}
+.option.emerland {
+    background-color: #2ECC71
+}
+.option.nephritis {
+    background-color: #27AE60
+}
+.option.peter-river {
+    background-color: #3498DB
+}
+.option.belize-hole {
+    background-color: #2980B9
+}
+.option.amethyst {
+    background-color: #9B59B6
+}
+.option.wisteria {
+    background-color: #8E44AD
+}
+.option.wet-asphalt {
+    background-color: #34495E
+}
+.option.midnight-blue {
+    background-color: #2C3E50
+}
+.option.sun-flower {
+    background-color: #F1C40F
+}
+.option.orange {
+    background-color: #F39C12
+}
+.option.carrot {
+    background-color: #E67E22
+}
+.option.pumpkin {
+    background-color: #D35400
+}
+.option.alizarin {
+    background-color: #E74C3C
+}
+.option.pomegranate {
+    background-color: #C0392B
+}
+.option.clouds {
+    background-color: #ECF0F1;
+    color: #bdc3c7
+}
+.option.silver {
+    background-color: #BDC3C7
+}
+.option.concrete {
+    background-color: #95A5A6
+}
+.option.asbestos {
+    background-color: #7F8C8D
+}
+.option.active {
+    border: 2px solid #000;
+}

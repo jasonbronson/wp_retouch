@@ -1,0 +1,19 @@
+.client {
+    margin-bottom: @line-height-computed;
+
+    .entry-inner {
+        padding: @spacer;
+        border: 1px solid @gray-lighter;
+    }
+
+    img {
+        .opacity(.5);
+        .transition(all .2s ease-in-out);
+    }
+
+    &:hover {
+        img {
+            .opacity(1);
+        }
+    }
+}

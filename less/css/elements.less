@@ -1,0 +1,59 @@
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+img.emoji,
+img.wp-smiley {
+	display: inline;
+	box-shadow: none;
+	max-height: 1em;
+	width: 1em;
+	margin: 0 0.07em;
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+// form controls
+#author,
+#comment,
+#email,
+#url,
+.search-field {
+	.form-control();
+
+	.box-shadow(none);
+
+	&:focus {
+		.box-shadow(none);
+	}
+}
+// buttons
+#submit,
+.search-submit {
+	.btn();
+	.btn-uppercase();
+	.btn-primary();
+}
+// add icon
+.search-form {
+	position: relative;
+
+	&::before {
+		font-family: FontAwesome;
+		content: "\f002";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: @input-height-base;
+		line-height: @input-height-base;
+		padding: 0 @padding-base-horizontal;
+		color: @gray-lighter;
+	}
+
+	.search-field {
+		padding-left: @padding-base-horizontal * 2.5;
+	}
+}
